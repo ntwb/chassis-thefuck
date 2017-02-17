@@ -2,13 +2,13 @@ class thefuck (
   $path   = "/vagrant/extensions/thefuck",
 ) {
   package { 'python-pip':
-    ensure => latest,
+    ensure => latest
   }
   package { 'python-dev':
-    ensure  => latest,
+    ensure  => latest
   }
   package { "thefuck" :
     ensure => "latest",
-    provider => pip,
+    provider => pip
   }
 }
