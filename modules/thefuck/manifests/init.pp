@@ -1,9 +1,6 @@
 class thefuck (
   $path   = "/vagrant/extensions/thefuck",
 ) {
-  package { 'python-pip':
-    ensure => latest
-  }
   package { 'python-dev':
     ensure  => latest
   }
