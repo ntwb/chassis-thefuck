@@ -1,14 +1,15 @@
+# A Chassis extension to install The Fuck: Magnificent app which corrects your previous console command
 class thefuck (
-  $path   = "/vagrant/extensions/thefuck",
+  $path   = '/vagrant/extensions/thefuck',
 ) {
-  package { 'python-pip':
-    ensure => present
+  package { 'python3-dev':
+    ensure => 'latest',
   }
-  package { 'python-dev':
-    ensure  => latest
+  package { 'python3-pip':
+    ensure => 'latest',
   }
-  package { "thefuck" :
-    ensure => "latest",
-    provider => pip
+  package { 'thefuck' :
+    ensure   => 'latest',
+    provider => pip,
   }
 }
