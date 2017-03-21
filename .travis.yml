@@ -5,3 +5,7 @@ install:
 
 script:
   - puppet-lint --fail-on-warnings modules
+
+notifications:
+  slack:
+    secure: Q2KZZdFCOCrRINCtOjPor9E62nw7IIKZcftJUrvbLDGfLoC/qyPe+7dmQ71LWtqGQ8Cvjae2E/hs1Drs/nSfqOxPhvu0R9K5GTuNuuvlwrDNVquD3TM/wfK/0lvflTLI9lmtnB6DVRw596O80Ie4AeCusFnVcXW4uGkzB7obu+oQAuWQY70AzmuYxIiH1WQti4juqErGHGM9Ie4SnROZdTAt7ikR7aGaLGd4fw+907t+h9K1XcogrVCzxXySEm2b1UfYJUgnROkjpGvZkJyUR4O/Io0sUAQ34t2zVrOa2M72FoD4yTNVE73kiH2wSARSuIVvLelBldQWrge21n31gg/ZiuhAu3QY2C4xyF9YTbBc0K3CVgLtjvTyGN8Vah91/k+d0zybcEU+7c1wc+GLo/SbIffvxu9Zt3BTNvDRpj1ceWHhPylBqt/YFRrAJ7Phxkslo5f6Vtgt/+Ihk+xj0ym+TmwIezjX4hA5cwktwnUS2aoqXfbsKPq06HYQkJy13qUN+/EpwkzY87nrfiVHelhwHJvrHFTVCFydjRnY9ft3iPP05DV+0cFydEQ+vNFlatEUm1MjoEtcguWGcVINJrauJbJKbQgu2sBOGj1PjT/ZXi1QoatCrXzMroNCPJEdUzK7wXW/KpjXwy++UJa22++2h0xdZ681U4VOq9ZPrE4=
